@@ -34,46 +34,6 @@ npm run build
 npm run preview
 ```
 
-## 📦 GitHub Pages Deployment
-
-### Option 1: Manual Deployment
-
-1. Build the project:
-   ```bash
-   npm run build
-   ```
-
-2. Push the `dist` folder to the `gh-pages` branch:
-   ```bash
-   git subtree push --prefix dist origin gh-pages
-   ```
-   
-   Or use the `gh-pages` package:
-   ```bash
-   npm install --save-dev gh-pages
-   npm run deploy
-   ```
-
-3. In your GitHub repository settings, go to Pages and set the source to the `gh-pages` branch.
-
-### Option 2: Automatic Deployment (Recommended)
-
-The included GitHub Actions workflow will automatically build and deploy to GitHub Pages on every push to the `main` branch.
-
-1. Make sure your repository name matches the base path in `vite.config.js` (currently set to `/porkroll/`)
-2. Push to the `main` branch
-3. The workflow will automatically deploy to GitHub Pages
-
-## ⚙️ Configuration
-
-If your repository name is different from `porkroll`, update the `REPO_NAME` constant in `vite.config.js`:
-
-```js
-const REPO_NAME = 'your-repo-name'; // Change this to match your GitHub repo name
-```
-
-This ensures the base path is correct for GitHub Pages deployment.
-
 ## 🛠️ Tech Stack
 
 - **Three.js** - 3D graphics and rendering
