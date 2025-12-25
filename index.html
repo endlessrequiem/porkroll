@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PorkRoll</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-overlay">
+            <div id="score-panel">
+                <h2>PorkRoll</h2>
+                <div id="scores">
+                    <div class="player-score">
+                        <h3>Player 1</h3>
+                        <div class="score-value" id="player1-score">0</div>
+                    </div>
+                    <div class="player-score">
+                        <h3>Player 2</h3>
+                        <div class="score-value" id="player2-score">0</div>
+                    </div>
+                </div>
+                <div id="turn-info">
+                    <div id="current-player">Player 1's Turn</div>
+                    <div id="turn-score">Turn Score: 0</div>
+                </div>
+            </div>
+            <div id="controls">
+                <button id="roll-btn" class="btn btn-primary">Roll Pigs</button>
+                <button id="stop-btn" class="btn btn-secondary" disabled>Stop & Bank</button>
+                <button id="reset-btn" class="btn btn-danger">Reset Game</button>
+            </div>
+            <div id="roll-result"></div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+    </div>
+    <script type="module" src="/game.js"></script>
+</body>
+</html>
