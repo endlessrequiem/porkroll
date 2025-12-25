@@ -1,6 +1,6 @@
 # PorkRoll 🐷
 
-A 3D version of the Pig Mania board game built with Three.js and Vite. Roll the pig dice in a boxing ring and be the first to reach 100 points!
+A 3D version of the Pig Mania board game built with Three.js and Vite. Roll the pig dice in a boxing ring and be the first to reach 100 points! Built for fun with Cursor.
 
 ## 🎮 How to Play
 
